@@ -1,6 +1,6 @@
 ﻿namespace Censor
 {
-    partial class Form1
+    partial class Censor
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,11 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Censor));
             lblInsert = new Label();
             textInput = new TextBox();
             btnControl = new Button();
             lblResult = new Label();
             textOutput = new TextBox();
+            clbChoose = new CheckedListBox();
             SuspendLayout();
             // 
             // lblInsert
@@ -46,6 +48,7 @@
             // 
             // textInput
             // 
+            textInput.BackColor = Color.LightBlue;
             textInput.Location = new Point(21, 52);
             textInput.Multiline = true;
             textInput.Name = "textInput";
@@ -54,12 +57,13 @@
             // 
             // btnControl
             // 
-            btnControl.Location = new Point(119, 328);
+            btnControl.BackColor = Color.LightBlue;
+            btnControl.Location = new Point(115, 374);
             btnControl.Name = "btnControl";
             btnControl.Size = new Size(131, 27);
             btnControl.TabIndex = 2;
             btnControl.Text = "CONTROL TEXT";
-            btnControl.UseVisualStyleBackColor = true;
+            btnControl.UseVisualStyleBackColor = false;
             btnControl.Click += btnControl_Click;
             // 
             // lblResult
@@ -73,24 +77,38 @@
             // 
             // textOutput
             // 
+            textOutput.BackColor = Color.LightBlue;
             textOutput.Location = new Point(416, 52);
             textOutput.Multiline = true;
             textOutput.Name = "textOutput";
-            textOutput.Size = new Size(372, 386);
+            textOutput.Size = new Size(372, 349);
             textOutput.TabIndex = 4;
             // 
-            // Form1
+            // clbChoose
+            // 
+            clbChoose.BackColor = Color.SteelBlue;
+            clbChoose.FormattingEnabled = true;
+            clbChoose.Items.AddRange(new object[] { "Obscene words", "Violent words" });
+            clbChoose.Location = new Point(115, 311);
+            clbChoose.Name = "clbChoose";
+            clbChoose.Size = new Size(131, 40);
+            clbChoose.TabIndex = 7;
+            // 
+            // Censor
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.SteelBlue;
             ClientSize = new Size(800, 450);
+            Controls.Add(clbChoose);
             Controls.Add(textOutput);
             Controls.Add(lblResult);
             Controls.Add(btnControl);
             Controls.Add(textInput);
             Controls.Add(lblInsert);
-            Name = "Form1";
-            Text = "Form1";
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            Name = "Censor";
+            Text = "Censor";
             Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();
@@ -103,5 +121,6 @@
         private Button btnControl;
         private Label lblResult;
         private TextBox textOutput;
+        private CheckedListBox clbChoose;
     }
 }

@@ -4,7 +4,6 @@ D:\zz\GITHUB\Learn-C-Sharp\Сensor\Censor\bin\Debug\net6.0-windows\Censor.runtim
 D:\zz\GITHUB\Learn-C-Sharp\Сensor\Censor\bin\Debug\net6.0-windows\Censor.dll
 D:\zz\GITHUB\Learn-C-Sharp\Сensor\Censor\bin\Debug\net6.0-windows\Censor.pdb
 D:\zz\GITHUB\Learn-C-Sharp\Сensor\Censor\obj\Debug\net6.0-windows\Censor.csproj.AssemblyReference.cache
-D:\zz\GITHUB\Learn-C-Sharp\Сensor\Censor\obj\Debug\net6.0-windows\Censor.Form1.resources
 D:\zz\GITHUB\Learn-C-Sharp\Сensor\Censor\obj\Debug\net6.0-windows\Censor.csproj.GenerateResource.cache
 D:\zz\GITHUB\Learn-C-Sharp\Сensor\Censor\obj\Debug\net6.0-windows\Censor.GeneratedMSBuildEditorConfig.editorconfig
 D:\zz\GITHUB\Learn-C-Sharp\Сensor\Censor\obj\Debug\net6.0-windows\Censor.AssemblyInfoInputs.cache
@@ -15,3 +14,4 @@ D:\zz\GITHUB\Learn-C-Sharp\Сensor\Censor\obj\Debug\net6.0-windows\refint\Censor
 D:\zz\GITHUB\Learn-C-Sharp\Сensor\Censor\obj\Debug\net6.0-windows\Censor.pdb
 D:\zz\GITHUB\Learn-C-Sharp\Сensor\Censor\obj\Debug\net6.0-windows\Censor.genruntimeconfig.cache
 D:\zz\GITHUB\Learn-C-Sharp\Сensor\Censor\obj\Debug\net6.0-windows\ref\Censor.dll
+D:\zz\GITHUB\Learn-C-Sharp\Сensor\Censor\obj\Debug\net6.0-windows\Censor.Censor.resources
