@@ -29,22 +29,15 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Censor));
-            lblInsert = new Label();
             textInput = new TextBox();
             btnControl = new Button();
             lblResult = new Label();
             textOutput = new TextBox();
-            clbChoose = new CheckedListBox();
+            lblInsert = new Label();
+            cbObscene = new CheckBox();
+            cbViolent = new CheckBox();
+            lblTests = new Label();
             SuspendLayout();
-            // 
-            // lblInsert
-            // 
-            lblInsert.AutoSize = true;
-            lblInsert.Location = new Point(149, 34);
-            lblInsert.Name = "lblInsert";
-            lblInsert.Size = new Size(60, 15);
-            lblInsert.TabIndex = 0;
-            lblInsert.Text = "Insert Text";
             // 
             // textInput
             // 
@@ -58,7 +51,8 @@
             // btnControl
             // 
             btnControl.BackColor = Color.LightBlue;
-            btnControl.Location = new Point(115, 374);
+            btnControl.ForeColor = Color.RoyalBlue;
+            btnControl.Location = new Point(116, 388);
             btnControl.Name = "btnControl";
             btnControl.Size = new Size(131, 27);
             btnControl.TabIndex = 2;
@@ -69,7 +63,8 @@
             // lblResult
             // 
             lblResult.AutoSize = true;
-            lblResult.Location = new Point(561, 34);
+            lblResult.ForeColor = Color.LightBlue;
+            lblResult.Location = new Point(543, 34);
             lblResult.Name = "lblResult";
             lblResult.Size = new Size(86, 15);
             lblResult.TabIndex = 3;
@@ -78,34 +73,69 @@
             // textOutput
             // 
             textOutput.BackColor = Color.LightBlue;
-            textOutput.Location = new Point(416, 52);
+            textOutput.Location = new Point(407, 52);
             textOutput.Multiline = true;
             textOutput.Name = "textOutput";
-            textOutput.Size = new Size(372, 349);
+            textOutput.ReadOnly = true;
+            textOutput.Size = new Size(372, 363);
             textOutput.TabIndex = 4;
             // 
-            // clbChoose
+            // lblInsert
             // 
-            clbChoose.BackColor = Color.SteelBlue;
-            clbChoose.FormattingEnabled = true;
-            clbChoose.Items.AddRange(new object[] { "Obscene words", "Violent words" });
-            clbChoose.Location = new Point(115, 311);
-            clbChoose.Name = "clbChoose";
-            clbChoose.Size = new Size(131, 40);
-            clbChoose.TabIndex = 7;
+            lblInsert.AutoSize = true;
+            lblInsert.ForeColor = Color.LightBlue;
+            lblInsert.Location = new Point(155, 34);
+            lblInsert.Name = "lblInsert";
+            lblInsert.Size = new Size(60, 15);
+            lblInsert.TabIndex = 5;
+            lblInsert.Text = "Insert Text";
+            // 
+            // cbObscene
+            // 
+            cbObscene.AutoSize = true;
+            cbObscene.ForeColor = Color.LightBlue;
+            cbObscene.Location = new Point(130, 329);
+            cbObscene.Name = "cbObscene";
+            cbObscene.Size = new Size(107, 19);
+            cbObscene.TabIndex = 6;
+            cbObscene.Text = "Obscene words";
+            cbObscene.UseVisualStyleBackColor = true;
+            // 
+            // cbViolent
+            // 
+            cbViolent.AutoSize = true;
+            cbViolent.ForeColor = Color.LightBlue;
+            cbViolent.Location = new Point(130, 354);
+            cbViolent.Name = "cbViolent";
+            cbViolent.Size = new Size(98, 19);
+            cbViolent.TabIndex = 7;
+            cbViolent.Text = "Violent words";
+            cbViolent.UseVisualStyleBackColor = true;
+            // 
+            // lblTests
+            // 
+            lblTests.AutoSize = true;
+            lblTests.ForeColor = Color.LightBlue;
+            lblTests.Location = new Point(168, 310);
+            lblTests.Name = "lblTests";
+            lblTests.Size = new Size(32, 15);
+            lblTests.TabIndex = 8;
+            lblTests.Text = "Tests";
             // 
             // Censor
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.SteelBlue;
+            BackColor = Color.RoyalBlue;
             ClientSize = new Size(800, 450);
-            Controls.Add(clbChoose);
+            Controls.Add(lblTests);
+            Controls.Add(cbViolent);
+            Controls.Add(cbObscene);
+            Controls.Add(lblInsert);
             Controls.Add(textOutput);
             Controls.Add(lblResult);
             Controls.Add(btnControl);
             Controls.Add(textInput);
-            Controls.Add(lblInsert);
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Censor";
             Text = "Censor";
@@ -121,6 +151,8 @@
         private Button btnControl;
         private Label lblResult;
         private TextBox textOutput;
-        private CheckedListBox clbChoose;
+        private CheckBox cbObscene;
+        private CheckBox cbViolent;
+        private Label lblTests;
     }
 }
